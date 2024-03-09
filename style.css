@@ -1,0 +1,84 @@
+/* Reset */
+@font-face {
+    font-family: 'amsterdamfour';
+    src: url('./font/AmsterdamFour.ttf');
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+/* Header */
+.menu-navegacion{
+    display: inline-block;
+}
+
+.menu-navegacion li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+/* Main */
+h1 {
+    font-family: 'amsterdamfour';
+    font-size: 60px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;    
+}
+
+p {
+    text-align: justify;
+}
+
+.foto-logo{
+    width: 25%;
+    height: auto;
+    display: inline-block;
+}
+
+.seccion-principal-inicio{
+    background-image: url('./images/imagen01.jpg');
+    width: 1340px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.color-titulo{
+    background-color: #d1a19e5e;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-secundaria-inicio{
+    width: 40em;
+}
+
+.fotoperfil-sobremi{
+    width: 50%;
+    height: auto;
+}
+
+.foto1-obras{
+    width: 25%;
+    height: auto;
+}
+
+.imagenes-redes{
+    width: 10%;
+    height: auto;
+}
+
+/* Footer */

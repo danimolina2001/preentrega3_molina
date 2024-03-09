@@ -1,0 +1,263 @@
+/* Reset */
+@font-face {
+    font-family: 'amsterdamfour';
+    src: url('../font/AmsterdamFour.ttf');
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'amsterdamfour';
+    font-size: 60px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    padding: 80px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;    
+}
+
+p {
+    text-align: justify;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.3fr 2fr 1fr 0.1fr;
+    grid-template-areas: 
+        "header     header      header"
+        "main       main        main"
+        "section    section     section"
+        "footer     footer      footer"
+     ;
+}
+
+
+/* Header */
+.navbar{
+    grid-area: header;
+    justify-content: space-around;
+
+}
+
+.menu-navegacion{
+    display: block;
+    justify-content: end;
+
+}
+
+.menu-navegacion li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 1rem;
+}
+
+.menu-navegacion nav ul li a{
+    text-decoration: none;
+}
+
+
+/*Tamaño logo*/
+.cont-logo{
+    width: 200px;
+}
+.cont-logo img{
+    width: 150%;
+}
+
+
+
+/* Main */
+
+/* index */
+.inicio-main{
+    grid-area: main;
+}
+
+.seccion-principal-inicio{
+    background-image: url('../images/imagen01.jpg');
+    width: 1340fr;
+    height: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.color-titulo{
+    background-color: #d1a19e5e;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*contacto */
+.grid-container-contacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 2fr 1fr 0.1fr;
+    grid-template-areas: 
+        "header"
+        "main"
+        "section"
+        "footer"
+     ;
+}
+
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* obras */
+.main-obras{
+    display: grid;
+    grid-column: 2;
+    grid-template-rows: 200px
+    
+}
+
+
+
+
+
+
+
+/* Section */
+
+/* index */
+.section-index{
+    display: grid;
+    grid-area: section;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 30px;
+}
+
+
+.first-item{
+    display: flex;
+    width: auto;
+    justify-content: center;
+}
+
+.second-item{
+    display: flex;
+    text-align: center;
+    padding: 100px;
+}
+
+/* contacto */
+.section-contacto{
+    grid-area: section;
+    padding: 50px;
+}
+
+/* obras */
+.section-obras{
+    display: grid;
+    grid-area: section;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 30px;
+}
+
+
+/* Footer */
+.footer{
+    grid-area: footer;
+}
+
+.menu-navegacion-footer{
+    display: flex;
+    justify-content: end;
+
+}
+
+.menu-navegacion-footer li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 1rem;
+    
+}
+
+.menu-navegacion-footer nav ul li a{
+    text-decoration: none;
+    
+}
+
+.menu-navegacion-footer a{
+    font-size: small;
+}
+
+.texto-footer {
+    font-size: small;
+    text-align: center;
+    padding: 3rem 0 0.5rem 0;
+    margin: 0%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.first-item-trayectoria{
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.second-item-trayectoria{
+    grid-column: 4/6;
+    grid-row: 2/4;
+}
+
+
+/* Main */
+
+
+
+
+
+.fotoperfil-sobremi{
+    width: 95%;
+    height: auto;
+}
+
+.foto1-obras{
+    width: 25%;
+    height: auto;
+}
+
+.imagenes-redes{
+    width: 10%;
+    height: auto;
+}
+
+
